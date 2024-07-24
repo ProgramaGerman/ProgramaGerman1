@@ -6,6 +6,7 @@ def Integraltrapecio(f, a, b, n):
     h = (b - a) / n
 
     for i in range(n):
+        x0 = area
         xi = x0 + (i + 1) * h
         area += (h / 2) + f(x0) + f(xi)
         x0 = xi
